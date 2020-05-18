@@ -1,0 +1,46 @@
+<suite name="All Test Suite">
+    <test name="testngTest">
+        <classes>
+            <class name="FirstTestCase"/>
+            <class name="SecondTestCase"/>
+        </classes>
+    </test>
+
+    <test name="annotationTest">
+        <classes>
+            <class name="annotations.AnnotationExample1">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                </methods>
+            </class>
+            <class name="annotations.AnnotationExample2">
+                <methods>
+                    <include name="test3"/>
+                    <include name="test4"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="groupingTest">
+        <groups>
+            <run>
+                <include name="sanity"/>
+                <exclude name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="GroupingExample"/>
+        </classes>
+    </test>
+
+    <test name="parametersTest">
+        <classes>
+            <parameter name="browser" value="firefox"/>
+            <class name="ParameterExample"/>
+        </classes>
+    </test>
+</suite>
+
+

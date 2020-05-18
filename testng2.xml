@@ -1,0 +1,10 @@
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="listeners.CustomListeners"/>
+    </listeners>
+    <test name="listenersTest">
+        <classes>
+            <class name="listeners.ListenerTest"/>
+        </classes>
+    </test>
+</suite>
